@@ -2,19 +2,19 @@ package main
 
 import "fmt"
 
+const spanish = "Spanish"
 const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 
 func Hello(name string, language string) string {
-	var prefix string = englishHelloPrefix
 	if name == "" {
 		name = "World"
 	}
 
-	if language == "Spanish" {
-		prefix = spanishHelloPrefix
+	if language == spanish {
+		return spanishHelloPrefix + name
 	}
-	return prefix + name
+	return englishHelloPrefix + name
 }
 
 func main() {
