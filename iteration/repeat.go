@@ -16,3 +16,7 @@ func IfContainsReturnString(s string, substr string) string {
 	}
 	return ""
 }
+
+func GetStringAtIndex(s string, index int) string {
+	return string(s[index])
+}

@@ -5,6 +5,11 @@ import (
 	"testing"
 )
 
+func ExampleGetStringAtIndex() {
+	fmt.Println(GetStringAtIndex("ABC", 0))
+	// Output: A
+}
+
 func TestIfContainsReturnString(t *testing.T) {
 	t.Run("not contains", func(t *testing.T) {
 		got := IfContainsReturnString("a", "b")
